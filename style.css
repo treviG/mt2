@@ -80,6 +80,19 @@ details:hover::before {
     opacity: 1;
 }
 
+/* Estilos para los elementos summary */
+summary {
+    background-color: #444444;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    color: #f0f0f0;
+    transition: background-color 0.3s ease-out;
+}
+
 summary:hover {
     background-color: #555555;
 }
@@ -89,10 +102,6 @@ summary::before {
     font-size: 18px;
     margin-right: 10px;
     transition: transform 0.3s ease-out;
-}
-
-summary::-webkit-details-marker {
-    display: none;
 }
 
 details[open] summary::before {
