@@ -3,6 +3,8 @@
 details summary {
   cursor: pointer;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 details {
@@ -21,8 +23,7 @@ details:hover {
 
 summary {
   margin: -0.75em -0.75em 0;
-  padding: 0.75em;
-  padding-left: 1.75em;
+  padding: 0.75em 0.75em 0.75em 1.75em;
   display: block;
   position: relative;
 }
@@ -68,9 +69,7 @@ details:not([disabled]) summary:before {
   border-width: 0.35rem;
   border-style: solid;
   border-color: transparent transparent transparent #ddd;
-  position: absolute;
-  top: 1rem;
-  left: 0.8rem;
+  margin-right: 0.5em;
   transform: rotate(0);
   transform-origin: 0.2rem 50%;
   transition: 0.25s transform ease;
@@ -79,9 +78,7 @@ details:not([disabled]) summary:before {
 details[disabled] summary:before {
   font-size: 0.8em;
   content: "🔒";
-  position: absolute;
-  top: 0.6rem;
-  left: 0.5rem;
+  margin-right: 0.5em;
   transform: rotate(0);
   transform-origin: 0.2rem 50%;
 }
